@@ -25,12 +25,12 @@ const navigation = [
     ]
   },
   {
-    label: 'Üniversite',
+    label: 'İnisiyatif',
     to: '#',
     items: [
-      { label: 'Program Detayı', to: '#' },
-      { label: 'Katıl', to: '#' },
-      { label: 'Mezunlarımız', to: '#' }
+      { label: 'Üniversite Programı', to: '#' },
+      { label: 'Birlikte Çalışma Programı', to: '#' },
+      { label: 'İstatistikler', to: '#' }
     ]
   },
   {
