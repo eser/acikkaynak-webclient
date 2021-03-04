@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { BaseStyles, theme } from "@primer/components";
 import Home from "./Home/Home";
+import './App.css'
 
 function App() {
   return (
