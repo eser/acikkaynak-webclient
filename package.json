@@ -5,7 +5,7 @@
   "dependencies": {
     "@apollo/client": "^3.3.11",
     "@primer/components": "^23.2.1",
-    "@primer/octicons-react": "^11.3.0",
+    "@primer/octicons-react": "^12.1.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
