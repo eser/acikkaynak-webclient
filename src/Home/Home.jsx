@@ -1,6 +1,5 @@
 import { Box, ButtonPrimary, Heading, StyledOcticon } from "@primer/components";
 import { CheckIcon } from "@primer/octicons-react";
-import Header from "./../components/Header/Header.jsx";
 import "./Home.css";
 
 function Home() {

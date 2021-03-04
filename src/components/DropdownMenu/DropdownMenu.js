@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Dropdown, Flex, Popover } from "@primer/components";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 import './DropdownMenu.css'
 
 const MenuContainer = styled.div`
@@ -13,7 +13,6 @@ const MenuContainer = styled.div`
 `;
 
 function DropdownMenu({ children }) {
-  const [isOpen, setOpen] = useState(false);
   const TopLevelItem = children[0];
   const SubMenu = children[1];
 
@@ -21,7 +20,7 @@ function DropdownMenu({ children }) {
     <>
       <div className={'dropdown-menu'}>
         <div>
-            {TopLevelItem}
+          {TopLevelItem}
         </div>
         <div className={'dropdown-menu__submenu'}>
           <MenuContainer pt={2}>
