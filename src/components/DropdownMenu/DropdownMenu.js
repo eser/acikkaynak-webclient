@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import { Dropdown, Flex, Popover } from "@primer/components";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import './DropdownMenu.css'
 
 const MenuContainer = styled.div`
-  position: absolute;
-  margin-top: 0.5rem;
+  background: white;
+  min-width: 10rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
 `;
 
 function DropdownMenu({ children }) {
@@ -15,17 +19,15 @@ function DropdownMenu({ children }) {
 
   return (
     <>
-      <div onMouseEnter={() => { setOpen(true); }}>
+      <div className={'dropdown-menu'}>
         <div>
             {TopLevelItem}
         </div>
-        <div onMouseLeave={() => { setOpen(false); }}>
-          <MenuContainer mt={2}>
-            <Popover relative open={isOpen} caret={"top-left"}>
-              <Popover.Content p={0}>
-                {SubMenu}
-              </Popover.Content>
-            </Popover>
+        <div className={'dropdown-menu__submenu'}>
+          <MenuContainer pt={2}>
+            <div>
+              {SubMenu}
+            </div>
           </MenuContainer>
         </div>
       </div>
