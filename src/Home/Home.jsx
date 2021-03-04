@@ -1,17 +1,21 @@
 import { Box, ButtonPrimary, Heading, StyledOcticon } from "@primer/components";
 import { CheckIcon } from "@primer/octicons-react";
+import Header from "./../components/Header/Header.jsx";
 import "./Home.css";
 
 function Home() {
   return (
-    <Box m={4}>
-      <StyledOcticon icon={CheckIcon} size={32} color="green.5" mr={2} />
+    <>
+      <Header/>
+      <Box m={4}>
+        <StyledOcticon icon={CheckIcon} size={32} color="green.5" mr={2}/>
 
-      <Heading mb={2}>Hello, world!</Heading>
-      <p>This will get Primer text styles.</p>
+        <Heading mb={2}>Hello, world!</Heading>
+        <p>This will get Primer text styles.</p>
 
-      <ButtonPrimary>Button Primary</ButtonPrimary>
-    </Box>
+        <ButtonPrimary>Button Primary</ButtonPrimary>
+      </Box>
+    </>
   );
 }
 
