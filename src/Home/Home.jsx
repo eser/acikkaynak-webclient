@@ -6,7 +6,6 @@ import "./Home.css";
 function Home() {
   return (
     <>
-      <Header/>
       <Box m={4}>
         <StyledOcticon icon={CheckIcon} size={32} color="green.5" mr={2}/>
 
