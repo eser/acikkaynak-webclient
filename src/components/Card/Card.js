@@ -3,7 +3,7 @@ import { BorderBox, Box, Flex, Heading, Text } from '@primer/components'
 function Card ({ children, ...props }) {
   return (
     <BorderBox p={3} {...props}>
-      <Flex flexDirection={'column'}>
+      <Flex flexDirection={'column'} height={'100%'}>
         {children}
       </Flex>
     </BorderBox>
@@ -46,7 +46,11 @@ function CardBody ({ children, ...props }) {
 }
 
 function CardFooter ({ children }) {
-  return (children)
+  return (
+    <Box mt={'auto'}>
+      {children}
+    </Box>
+  )
 }
 
 Card.Icon = CardIcon

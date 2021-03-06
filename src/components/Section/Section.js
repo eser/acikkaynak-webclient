@@ -13,7 +13,7 @@ function Section ({ children, ...props }) {
   )
 }
 
-function SectionHeader ({children, ...props}) {
+function SectionHeader ({ children, ...props }) {
   return <Pagehead pt={0} pb={3} {...props}>
     <Flex alignItems={'center'}>
       {children}
@@ -33,12 +33,17 @@ function SectionIcon ({ icon, ...props }) {
   const Icon = icon
   return (
     <Box mr={3}>
-      <Icon size={32} {...props} />
+      <Icon size={36} {...props} />
     </Box>
   )
 }
 
+function SectionBody ({ children, ...props }) {
+  return <Flex flexWrap={'wrap'}>{children}</Flex>
+}
+
 Section.Header = SectionHeader
+Section.Body = SectionBody
 Section.Title = SectionTitle
 Section.Icon = SectionIcon
 
