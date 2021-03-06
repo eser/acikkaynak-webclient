@@ -5,7 +5,7 @@ function Pagehead ({ title, description, icon, children }) {
 
   return (
     <Flex>
-      <Box py={4}>
+      <Box py={6}>
         <Flex alignItems={'center'}>
           {Icon && <Box pr={4}>
             <Icon size={64} />

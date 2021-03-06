@@ -91,7 +91,7 @@ function CertificatesAll () {
                 }
               </Grid>
 
-              <Spacer size={'big'}/>
+              <Spacer />
             </Section>
           )
         })

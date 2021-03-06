@@ -2,8 +2,8 @@ import { Box } from '@primer/components'
 
 function Spacer ({ children, size }) {
   size = (
-    size === 'big' ? 6 : (
-      size === 'small' ? 2 : 4
+    size === 'big' ? 8 : (
+      size === 'small' ? 4 : 6
     )
   )
 
