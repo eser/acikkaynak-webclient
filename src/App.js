@@ -5,7 +5,7 @@ import { BaseStyles, theme  } from "@primer/components";
 import DefaultLayout from "./Layout/DefaultLayout";
 import Home from "./Home/Home";
 import "./App.css";
-import Certificates from './Certificates'
+import Certificates from './Certificates/Certificates'
 
 
 function App() {
