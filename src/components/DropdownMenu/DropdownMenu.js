@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Dropdown, Flex, Popover } from "@primer/components";
+import React from "react";
+import { Dropdown, Flex } from "@primer/components";
 import styled from "styled-components";
-import { Link } from "react-router-dom"
-import './DropdownMenu.css'
+import { Link } from "react-router-dom";
+import "./DropdownMenu.css";
 
 const MenuContainer = styled.div`
   background: white;
@@ -18,11 +18,11 @@ function DropdownMenu({ children }) {
 
   return (
     <>
-      <div className={'dropdown-menu'}>
+      <div className={"dropdown-menu"}>
         <div>
           {TopLevelItem}
         </div>
-        <div className={'dropdown-menu__submenu'}>
+        <div className={"dropdown-menu__submenu"}>
           <MenuContainer pt={2}>
             <div>
               {SubMenu}

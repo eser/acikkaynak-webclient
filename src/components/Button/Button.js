@@ -1,23 +1,29 @@
-import { Button as ButtonDefault, ButtonPrimary, ButtonOutline, ButtonDanger, ButtonInvisible, ButtonClose } from '@primer/components'
-import PropTypes from 'prop-types'
+import {
+  Button as ButtonDefault,
+  ButtonClose,
+  ButtonDanger,
+  ButtonInvisible,
+  ButtonOutline,
+  ButtonPrimary,
+} from "@primer/components";
 
-function Button ({ children, block, variant, ...props }) {
+function Button({ children, block, variant, ...props }) {
   let ButtonVariant;
 
   switch (variant) {
-    case 'primary':
+    case "primary":
       ButtonVariant = ButtonPrimary;
       break;
-    case 'danger':
+    case "danger":
       ButtonVariant = ButtonDanger;
       break;
-    case 'outline':
+    case "outline":
       ButtonVariant = ButtonOutline;
       break;
-    case 'invisible':
+    case "invisible":
       ButtonVariant = ButtonInvisible;
       break;
-    case 'close':
+    case "close":
       ButtonVariant = ButtonClose;
       break;
     default:
@@ -26,11 +32,10 @@ function Button ({ children, block, variant, ...props }) {
   }
 
   return (
-    <ButtonVariant {...(block ? { width: '100%' } : {})} {...props}>
+    <ButtonVariant {...(block ? { width: "100%" } : {})} {...props}>
       {children}
     </ButtonVariant>
-  )
+  );
 }
 
-
-export { Button as default }
+export { Button as default };
