@@ -1,10 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch,  } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import { BaseStyles, theme } from "@primer/components";
+import { BaseStyles, theme  } from "@primer/components";
 import DefaultLayout from "./Layout/DefaultLayout";
 import Home from "./Home/Home";
 import "./App.css";
+import Certificates from './Certificates'
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
             <DefaultLayout>
               <Route path="/" exact strict>
                 <Home/>
+              </Route>
+              <Route path="/certificates" exact strict>
+                <Certificates/>
               </Route>
             </DefaultLayout>
           </Switch>
